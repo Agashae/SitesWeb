@@ -1,0 +1,232 @@
+body {
+    /*enlever marge de base*/
+    margin: 0px;
+
+    background-color: rgb(40, 40, 40);
+    font-family: 'Lalezar', sans-serif;
+}
+
+p {
+    font-family: 'Lalezar', sans-serif;
+    color: black;
+    line-height: 40px;
+    /*https://www.pierre-giraud.com/html-css-apprendre-coder-cours/line-height-letter-word-spacing/*/
+    font-size: larger;
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Lexend Zetta', sans-serif;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: xxx-large;
+    /*Liam m'a aidé pour cette commande*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*barre horizontale sous la nave*/
+    border-bottom: 15px solid rgb(255, 255, 255);
+
+        flex-wrap: wrap; /* passe à la ligne si trop petit */
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 25px;
+}
+
+nav p{
+    color: #fd9307;
+font-size: xxx-large;
+}
+
+
+.logo {
+    margin-top: 15px;
+    height: 100px;
+    width: auto;
+    /* ne dépasse jamais l'écran */
+        max-width: 100%; 
+
+}
+
+.mascotte {
+        margin-top: 15px;
+
+    height: 150px;
+    width: auto;
+}
+
+img {
+    width: 120px;
+    height: auto;
+}
+
+.RB-container {
+
+   
+    /*espace entre les blocs*/
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    /*espace entre la première ligne et la barre horizontale*/
+    margin-bottom: 2%;
+    /*espace entre la dernière ligne et la barre horizontale en base*/
+
+
+    /*https://enseignement.section-inf.ch/moduleICT/293/CSS/10_grid/*/
+    display: grid;
+    gap: 1rem;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));   
+/* Crée automatiquement autant de colonnes que possible, chaque colonne minimum 370px et maximum 3 fraction de l'espace dispo */
+
+
+}
+
+.RB {
+    background-color: rgb(24, 36, 101);
+    border-radius: 20px;
+    padding: 45px;
+    color: white;
+
+    /*avoir le texte à droite de la canette*/
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    width: fit-content;
+    /*https://www.w3schools.com/cssref/func_fit-content.php*/
+
+    /*sans ça, RBZero prendrait + de place et RBGalcier - de place*/
+     /* La carte prend toute la largeur de sa colonne */
+    width: 100%;
+
+    /* Le padding est dans le 100%, évite les débordements */
+box-sizing: border-box;
+
+
+    /*espace entre la première ligne et la barre horizontale*/
+    margin-top: 5%;
+   
+}
+
+.RB:hover {
+    transform: scale(1.05);
+    /* Agrandit de 50% */
+    transition: transform 0.3s ease;
+    /* Animation fluide */
+}
+
+/*pour changer la couleur séparéement*/
+.RB.classique {
+    background-color: #182465;
+}
+
+.RB.zero {
+    background-color: #8ABAE2;
+}
+
+.RB.sugarfree {
+    background-color: #2599D1;
+}
+
+.RB.spring {
+    background-color: #BB2043;
+}
+
+.RB.springZero {
+    background-color: #BF3353;
+}
+
+.RB.green {
+    background-color: #BF3353;
+}
+
+.RB.apricot {
+    background-color: #F3A245;
+}
+
+.RB.ice {
+    background-color: #56BECA;
+}
+
+.RB.glacier {
+    background-color: #1A2A70;
+}
+
+.RB.peach {
+    background-color: #D84381;
+}
+
+.RB.pink {
+    background-color: #E19BC0;
+}
+
+.RB.seaBlue {
+    background-color: #2DA5DC;
+}
+
+.RB.white {
+    background-color: #9BA0A1;
+}
+
+
+
+.SpecsRB {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    width: auto;      
+    max-width: 100%;
+    /* Padding inclus dans la largeur */
+    box-sizing: border-box; 
+
+    border-radius: 15px;
+    background-color: rgb(237, 239, 245);
+}
+
+.texteRB {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.barre {
+    border-bottom: 15px solid rgb(255, 255, 255);
+    margin-bottom: 2%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+            flex-wrap: wrap; /* passe à la ligne si trop petit */
+
+}
+
+footer a {
+    margin: 0% 10%;
+
+}
+
+footer p{
+    color: white;
+    font-size: 25px;
+}

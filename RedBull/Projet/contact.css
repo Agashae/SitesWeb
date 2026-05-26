@@ -1,0 +1,134 @@
+body {
+
+    /*enlever marge de base*/
+    margin: 0px;
+
+    background-color: rgb(121,121,121);
+    font-family: 'Lalezar', sans-serif;
+
+    color: white;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: xxx-large; /*Liam m'a aidé pour cette commande*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*barre horizontale sous la nave*/
+    border-bottom: 15px solid rgb(255, 255, 255);
+
+        flex-wrap: wrap; /* passe à la ligne si trop petit */
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 25px;
+}
+
+nav p{
+    color: #fd9307;
+font-size: xxx-large;
+}
+
+.logo {
+    margin-top: 15px;
+    height: 100px;
+    width: auto;
+    /* ne dépasse jamais l'écran */
+        max-width: 100%; 
+
+}
+
+.mascotte {
+        margin-top: 15px;
+
+    height: 150px;
+    width: auto;
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+form {
+    margin: 1%;
+}
+
+form div {
+    margin: 1%;
+}
+
+fieldset {
+    border: 15px solid white;
+    /*epaisseur/couleur de la bordure*/
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: xx-large;
+}
+
+legend {
+    padding: 10px;
+    /* Décalage par rapport au bord */
+        font-size: xxx-large;
+}
+
+
+input {
+    background-color: rgb(121,121,121);
+    border: 5px solid white;
+    color: white;
+}
+
+select {
+    background-color: rgb(121,121,121);
+    border: 5px solid white;
+    color: white;
+}
+
+textarea {
+    background-color: rgb(121,121,121);
+    border: 5px solid white;
+    color: white;
+    height: 70px;
+    width: 100%;
+}
+
+
+.barre {
+    border-bottom: 15px solid rgb(255, 255, 255);
+    margin-bottom: 2%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+            flex-wrap: wrap; /* passe à la ligne si trop petit */
+            margin: 2%;
+
+}
+
+footer a {
+    margin: 0% 10%;
+
+}
+
+footer p{
+    color: white;
+    font-size: 25px;
+}

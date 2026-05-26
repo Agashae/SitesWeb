@@ -1,0 +1,187 @@
+body {
+    /*enlever marge de base*/
+    margin: 0px;
+
+    background-color: rgb(0, 60, 98);
+    font-family: 'Lalezar', sans-serif;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: xxx-large; /*Liam m'a aidé pour cette commande*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*barre horizontale sous la nave*/
+    border-bottom: 15px solid rgb(255, 255, 255);
+
+        flex-wrap: wrap; /* passe à la ligne si trop petit */
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 25px;
+}
+
+nav p{
+    color: #fd9307;
+font-size: xxx-large;
+}
+
+.logo {
+    margin-top: 15px;
+    height: 100px;
+    width: auto;
+    /* ne dépasse jamais l'écran */
+        max-width: 100%; 
+
+}
+
+.mascotte {
+        margin-top: 15px;
+
+    height: 150px;
+    width: auto;
+}
+
+/* Conteneur principal */
+.section-video {
+    background-color: #7a0f1f; 
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    margin: 3% 3% 4% 3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* passe à la ligne si trop petit */
+    flex-wrap: wrap; 
+}
+
+.section-video:hover {
+scale: calc(1.02);
+transition: 0.6s;
+
+
+/*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+                0 0 30px rgba(255, 255, 255, 0.9),
+                0 0 60px rgba(255, 255, 255, 0.11),
+                0 0 100px rgba(255, 255, 255, 0.10);
+}
+
+.texte-droite {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 400px;
+    /* s'adapte si l'écran est petit */
+    width: 100%;
+            /* pousse le bloc vers la droite */
+        margin-left: auto;
+ 
+}
+
+h1 {
+    font-size: 100px;
+    margin: 10 0 10px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 200%;
+    margin: 0;
+}
+
+.TitleSection-droite{
+        font-size: 300%;
+
+}
+
+
+/* Image */
+.video img {
+    /* prend toute la largeur disponible */
+    width: 100%;   
+/* mais pas trop grande sur desktop */
+    max-width: 600px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.Comparaison h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+.Comparaison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 5%;
+}
+
+.Comparaison img {
+    max-height: 550px;
+    width: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.bloc:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+scale: calc(1.05);
+transition: 0.6s;
+
+
+/*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+                0 0 30px rgba(255, 255, 255, 0.9),
+                0 0 60px rgba(255, 255, 255, 0.11),
+                0 0 100px rgba(255, 255, 255, 0.10);
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.vs{
+    font-size: 200px;
+    color: #7a0f1f;
+}
+
+.barre{
+    border-bottom: 15px solid rgb(255, 255, 255);
+        margin-bottom: 2%;
+}
+
+footer{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+        flex-wrap: wrap; /* passe à la ligne si trop petit */
+}
+
+footer a{
+        margin: 0% 10%;
+}
+
+footer p{
+    color: white;
+    font-size: 25px;
+}

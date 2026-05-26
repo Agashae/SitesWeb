@@ -1,0 +1,171 @@
+body {
+    margin: 0px;
+    background-color: rgb(21, 37, 63);
+    font-family: 'Lalezar', sans-serif;
+    color: white;
+    font-size: xxx-large;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 15px solid rgb(255, 255, 255);
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 25px;
+}
+
+nav p{
+    color: #fd9307;
+font-size: xxx-large;
+}
+
+.logo {
+    margin-top: 15px;
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+}
+
+.mascotte {
+    margin-top: 15px;
+    height: 150px;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.Section-Moi {
+    display: flex;
+    align-items: center; 
+    gap: 4%;              
+    padding: 0 2%;
+    /*comme ça toute la section Moi est dans la page*/
+line-height: 0.8;
+}
+
+.Moi-Gauche {
+    display: flex;
+    flex-direction: column; 
+    gap: 16px;
+}
+
+.Texte-Moi {
+    margin-left: 1%;
+}
+
+.ReseauSociaux {
+    padding: 11px 102px;
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.LinkedIn {
+    width: 100px;
+    height: auto;
+}
+
+.GitHubLogo {
+    width: 200px;
+    height: auto;
+}
+
+.LogoNexus {
+    width: 280px;
+    height: auto;
+}
+
+.PDP {
+    height: 420px;
+    width: auto;
+    border-radius: 12%;
+    margin-left: auto; 
+}
+
+
+.barre {
+    border-bottom: 15px solid rgb(255, 255, 255);
+    margin: 2% 0;
+}
+
+.Section-APropos {
+    padding: 0 3%;
+}
+
+.Texte-APropos {
+    font-size: xx-large;
+}
+
+ul {
+    font-size: xx-large;
+}
+
+.Section-Projets {
+    padding: 0 3%;
+}
+
+.Projet-Champ {
+    background-color: rgb(40, 60, 95);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.Projet-Image-Nexus img {
+    width: 100%;
+    max-width: 1361;
+    height: auto;
+}
+
+.Projet-Card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.Projet-Image {
+    display: grid;
+    /* 3 par ligne*/
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 15px;
+}
+
+
+.Projet-Image img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+            flex-wrap: wrap; /* passe à la ligne si trop petit */
+            margin: 2%;
+
+}
+
+footer a {
+    margin: 0% 10%;
+}
+
+footer p{
+    color: white;
+    font-size: 25px;
+}

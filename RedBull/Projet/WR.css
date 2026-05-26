@@ -1,0 +1,176 @@
+body {
+    /*enlever marge de base*/
+    margin: 0px;
+
+    background-color: rgb(0, 11, 35);
+    font-family: 'Lalezar', sans-serif;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: xxx-large; /*Liam m'a aidé pour cette commande*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*barre horizontale sous la nave*/
+    border-bottom: 15px solid rgb(255, 255, 255);
+
+        flex-wrap: wrap; /* passe à la ligne si trop petit */
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 25px;
+}
+nav p{
+    color: #fd9307;
+font-size: xxx-large;
+}
+
+.logo {
+    margin-top: 15px;
+    height: 100px;
+    width: auto;
+    /* ne dépasse jamais l'écran */
+        max-width: 100%; 
+
+}
+
+.mascotte {
+        margin-top: 15px;
+
+    height: 150px;
+    width: auto;
+}
+
+h1{
+    color: white;
+text-align: center;
+font-size: xxx-large;
+}
+
+h2{
+        color: white;
+text-align: center;
+font-size: xxx-large;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+        flex-wrap: wrap;
+
+}
+
+.menu a{
+        padding: 2%;
+        text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    transition: 0.1s;
+        /*pour le wrap, comme ça tout est droit*/
+    text-align: center; 
+}
+
+
+.menu a:hover {
+    background-color: rgb(255, 244, 220);
+        color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+
+.image-hover {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* evite aussi que l'overlay deborde des coins ronds */
+  
+    width: 80%;        /* responsive*/
+    min-width: 40%;   /* taille minimale */
+
+}
+
+.image-hover img{
+    border-radius: 20px;
+    width: 100%;        /* responsive*/
+     
+}
+
+.overlay {
+    position: absolute;    /* se superpose sur l'image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+    color: black;
+
+    display: flex;
+    align-items: center;    /* texte centré verticalement */
+    justify-content: center; /* texte centré horizontalement */
+    flex-direction: column;
+
+    opacity: 0;             /* invisible par défaut */
+    transition: 0.3s ease;  /* animation fluide */
+    border-radius: 10px;
+}
+
+.text-overlay{
+    display: flex;
+    flex-direction: row;
+     text-align: center;
+    margin: 4px 0;
+     color: black;
+     font-size: 3vw;      
+}
+
+
+
+
+
+
+
+.image-hover:hover .overlay {
+    opacity: 1; /* apparaît au survol */     
+}
+
+.video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 15px;
+}
+
+
+.barre{
+    border-bottom: 15px solid rgb(255, 255, 255);
+        margin-bottom: 2%;
+}
+
+footer{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+            flex-wrap: wrap; /* passe à la ligne si trop petit */
+
+}
+
+footer a{
+        margin: 0% 10%;
+
+}
+
+footer p{
+    color: white;
+    font-size: 25px;
+}

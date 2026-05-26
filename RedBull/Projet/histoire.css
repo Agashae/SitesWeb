@@ -1,0 +1,304 @@
+body {
+
+    /*enlever marge de base*/
+    margin: 0px;
+
+    font-family: 'Lalezar', sans-serif;
+    color: white;
+    font-size: xxx-large;
+    background-color: rgb(0, 15, 75);
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: xxx-large;
+    /*Liam m'a aidé pour cette commande*/
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*barre horizontale sous la nave*/
+    border-bottom: 15px solid rgb(255, 255, 255);
+
+    flex-wrap: wrap;
+    /* passe à la ligne si trop petit */
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 25px;
+}
+
+nav p{
+    color: #fd9307;
+font-size: xxx-large;
+}
+
+.logo {
+    margin-top: 15px;
+    height: 100px;
+    width: auto;
+    /* ne dépasse jamais l'écran */
+    max-width: 100%;
+
+}
+
+.mascotte {
+    margin-top: 15px;
+
+    height: 150px;
+    width: auto;
+}
+
+.barre {
+    border-bottom: 15px solid rgb(0, 0, 0);
+    margin-bottom: 2%;
+}
+
+p {
+    font-size: xx-large;
+}
+
+.TexteTitre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(220, 24, 70);
+    font-size: 90px;
+}
+
+.TexteTitre h3 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    /*enlève son gras*/
+    line-height: 0;
+
+}
+
+.TexteTitre p {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0;
+}
+
+.origines {
+    display: flex;
+    justify-content: center;
+/* utile sur mobile */
+        flex-wrap: wrap; 
+
+}
+
+
+.bloc-bleu {
+    background-color: #3f51b5;
+    color: black;
+    padding: 30px;
+    max-width: 450px;
+    /*pour avoir un bod rouge*/
+    border-left: 25px solid #dc1846;
+    font-family: Arial, sans-serif;
+    margin: 9%;
+
+}
+
+.bloc-image {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 9%;
+}
+
+.bloc-image p {
+    
+/*align-items s'applique au parent pour aligner tous les éléments enfants d'un seul coup 
+align-self s'applique directement à un élément enfant spécifique pour écraser la valeur du parent*/
+/*https://teamtreehouse.com/community/there-is-any-difference-between-alignitems-and-alignself*/
+
+
+    align-self: flex-start;
+    color: white;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+
+.bloc-image h2 {
+    align-self: flex-start; 
+    color: #ff0000;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.bloc-image img {
+        align-self: center; 
+    width: 100%;
+    height: auto;
+    margin-left: 100px;
+}
+
+
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a{
+        padding: 2%;
+        text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    transition: 0.1s;    
+
+    /*pour le wrap, comme ça tout est droit*/
+    text-align: center;
+}
+
+
+.menu a:hover {
+    background-color: #dc1846;
+
+        border-radius: 5px;
+}
+
+
+
+
+.chronologie {
+    margin: 9%;
+
+}
+
+.bloc-bleu-large {
+    background-color: #3f51b5;
+    color: black;
+    padding: 30px;
+    /*pour avoir un bod rouge*/
+    border-left: 25px solid #dc1846;
+    font-family: Arial, sans-serif;
+    margin: 9%;
+
+}
+
+.chronologie p {
+    color: white;
+}
+
+.titre-chronologie {
+    color: white;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.chronologie h2 {
+    color: #ff0000;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+/* mettre id et # permet de cibler et ça permet qu'il ne pernne pas les propriété du parent*/
+#titre-secondaire {
+    color: white;
+}
+
+.rb-chiffre {
+    margin: 9%;
+}
+
+.titre-rb-chiffre {
+    color: white;
+}
+
+.rb-chiffre h2 {
+    color: #ff0000;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.bloc-bleu-sans-rouge {
+    background-color: #3f51b5;
+    color: black;
+    padding: 30px;
+    max-width: 50%;
+    /*pour avoir un bod rouge*/
+    font-family: Arial, sans-serif;
+    margin: 9%;
+
+
+
+}
+
+.h2-align{
+    display: flex;
+    flex-direction: row;
+     /* utile comme ça quand la page est en mobile, les textes ne dépassent pas du bloc*/
+        flex-wrap: wrap;
+
+}
+
+#white-h2{
+    color: white;
+}
+
+.bloc-bleu-sans-rouge p{
+        color: white;
+
+}
+
+
+.rb-chiffre-bloc{
+    /*Grid est bien pour le placement des éléments*/
+    /*  repeat() faire une répétition de colonnes*/
+    display: grid;
+
+    /*mets autant de <div class="bloc-bleu-sans-rouge"> que possible*/
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
+
+}
+
+
+.barre {
+    border-bottom: 15px solid rgb(255, 255, 255);
+    margin: 2% 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+            flex-wrap: wrap; /* passe à la ligne si trop petit */
+
+}
+
+footer a {
+    margin: 0% 10%;
+
+}
+
+footer p{
+    color: white;
+    font-size: 25px;
+}

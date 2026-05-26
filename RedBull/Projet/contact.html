@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+        <!--Police la + proche de RB-->
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+        <link rel="icon" href="/image/favicon.png">
+</head>
+
+<body>
+    <!--Haut-->
+    <nav><a href="accueil.html">
+                <img class="logo" src="./image/red-bull-logo-png-png-2272x1704-red-bull-logo-background-2272.png" alt="Logo">
+    </a>
+        <a href="./boissons.html">BOISSONS</a>
+        <a href="./histoire.html">HISTOIRE</a>
+        <a href="./WR.html">WORLD RECORD</a>
+                                                <p>Red Bull - Contact</p>
+        <a href="https://www.redbull.com/ch-fr"><img class="mascotte" src="image/MascotteRB.png" alt="Mascotte"></a>
+    </nav>
+
+
+<h1>Pour me contacter !</h1>
+
+
+
+
+
+
+    <!--Début de formulaire-->
+
+    <!-- action c’est l’URL pour l'app Formspree et method="POST" c'est pour envoyer les données-->
+    <form action="https://formspree.io/f/xwvwnbkg" method="POST">
+        <!--C'est un champ-->
+        <fieldset>
+            <legend>Vos coordonnées </legend>
+
+            <div>
+                <label for="LastName">Votre nom</label>
+                <input type="text" id="LastName" name="LastName">
+            </div>
+
+            <div>
+                <label for="FirstName">Votre prénom</label>
+                <input type="text" id="FirstName" name="FirstName">
+            </div>
+
+            <div>
+                <label for="adress">Votre adresse</label>
+                <input type="text" id="adress" name="adress">
+            </div>
+
+            <div>
+                <label for="localisation">Le lieu (Rue du ...)</label>
+                <input type="text" id="localisation" name="localisation">
+            </div>
+
+            <div>
+                <label for="NPA">N° Postal (NPA)</label>
+                <input type="number" id="NPA" name="NPA">
+            </div>
+
+            <div>
+                <label for="email">L’adresse mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="PhoneNumbre">Numéro de téléphone</label>
+                <input type="tel" id="PhoneNumbre" name="PhoneNumbre">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Avez-vous aimé ?</legend>
+
+        
+           
+                <input class="radiobox" type="radio" name="avis" value="oui"> Oui
+                <input class="radiobox" type="radio" name="avis" value="bof"> Bof
+                <input class="radiobox" type="radio" name="avis" value="non"> Non
+          
+
+            <div>
+                <label for="note">Une note ?</label>
+                <select id="note" name="note">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="message">Un message</label>
+                <div>
+                    <textarea id="message" name="message" placeholder="Un message / une requête à faire ?"></textarea>
+                </div>
+            </div>
+            
+          <input type="submit" value="Envoyer">  
+
+        </fieldset>
+
+
+    </form>
+
+
+    <!--En mettant la barre dans le footer, elle allait tout en bas et pas au dessus du text-->
+    <div class="barre"></div>
+
+    <!--Pied de page-->
+    <footer>
+        <a href="./auteur.html">AUTEUR</a>
+                <p>© 2026 Mon Site Web Red Bull - Agashae Premakumar</p>
+
+    </footer>
+</body>
+
+</html>
