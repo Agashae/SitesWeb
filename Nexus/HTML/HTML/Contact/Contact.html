@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Nexus - Contact</title>
+  <link rel="stylesheet" href="Contact.css">
+  <meta charset="UTF-8">
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <a href="../Accueil/Accueil.html" class="LogoCliquable">
+        <img src="../Logo.png" alt="Logo" class="logo-img">
+      </a>
+      <a href="../Astronomie/Astronomie.html">Astronomie</a>
+      <a href="../Histoire/Histoire.html">Histoire</a>
+      <a href="../LoisEtTheoremes/LoisEtTheoremes.html">Lois et théorèmes</a>
+      <h3>Nexus – Contact</h3>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Pour me contacter</h1>
+
+    <!--C'est pour faire un formulaire-->
+<form action="https://formspree.io/f/xanozekz" method="POST">
+  <fieldset>
+    <legend>Le questionnaire</legend>
+
+    <div class="espacement">
+      <label for="nom">Votre nom</label>
+      <input type="text" id="nom" name="nom">
+    </div>
+
+    <div class="espacement">
+      <label for="prenom">Votre prénom</label>
+      <input type="text" id="prenom" name="prenom">
+    </div>
+
+    <div class="espacement">
+      <label for="adresse">L’adresse</label>
+      <input type="text" id="adresse" name="adresse">
+    </div>
+
+    <div class="espacement">
+      <label for="lieu">Le lieu (Rue de....)</label>
+      <input type="text" id="lieu" name="lieu">
+    </div>
+
+    <div class="espacement">
+      <label for="npa">N° Postal (NPA)</label>
+      <input type="text" id="npa" name="npa">
+    </div>
+
+    <div class="espacement">
+      <label for="email">L’adresse mail</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <div class="espacement">
+      <label for="telephone">Numéro de téléphone</label>
+      <input type="tel" id="telephone" name="telephone">
+    </div>
+
+    <div class="espacement">
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Avez-vous aimé le site ?</legend>
+    <div class="Aimer">
+      <div class="alignement">
+        <input type="radio" id="oui" name="avis" value="oui">
+        <label for="oui">Oui</label>
+      </div>
+      <div class="alignement">
+        <input type="radio" id="pasmal" name="avis" value="pas mal">
+        <label for="pasmal">Pas mal</label>
+      </div>
+      <div class="alignement">
+        <input type="radio" id="non" name="avis" value="non">
+        <label for="non">Non...</label>
+      </div>
+
+      <div class="alignement">
+        <label for="note">Une note ?</label>
+      </div>
+
+      <div class="alignement">
+        <select id="note" name="note">
+          <option value="" disabled selected>-- De 1 à 6 --</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>
+    <button type="submit">Envoyer</button>
+  </div>
+</form>
+
+
+
+
+
+  </main>
+
+
+
+  <footer>
+    <a href="../Contact/Contact.html">Contact</a>
+    <h3>© 2025 Mon Site Web</h3>
+    <a href="../Auteur/Auteur.html">Auteur</a>
+  </footer>
+</body>
+
+</html>
