@@ -1,0 +1,300 @@
+/*tout*/
+body{
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+/*nav*/
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav img {
+    width: 130px;
+    filter: invert(100%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal {
+    display: flex;
+ /* supprime  puces */
+        list-style-type: none; 
+    padding: 0;
+    margin: 0;       
+    gap: 20px;   
+        flex-wrap: wrap;
+    justify-content: center; 
+}
+
+/*presentation*/
+.Presentation {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 0 auto;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Presentation .lune {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenu-texte {
+    color: rgb(209, 209, 209);
+
+    /* ajout */
+    flex: 1;
+    min-width: 250px;
+}
+
+/*chiffres*/
+.chiffres {
+    background-color: rgb(26, 26, 48);
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.chiffres p {
+    text-align: center;
+}
+
+
+.grille-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    gap: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.carte-stat {
+    background-color: rgb(26, 26, 48); 
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carte-stat h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+    letter-spacing: 1px;
+}
+
+.carte-stat .label {
+    font-size: 0.8rem;
+    color: #8a8da4; 
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.carte-stat p {
+    font-size: 1rem;
+    color: #616479; 
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.carte-stat:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*phases*/
+.Phases {
+    background-color: rgb(5, 5, 15);
+    color: #ffffff;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*2 GIF */
+.Phases div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Phases img {
+    max-width: 100%;
+    height: auto;
+}
+.Phases img:hover {
+    transform: scale(1.1);
+}
+
+.MoonEmojis {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.Phases table {
+    margin: 3%;
+    width: 100%;
+    max-width: 900px;
+}
+
+.Phases table img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+table td {
+    padding: 1%;
+}
+
+
+/*exploration*/
+.Exploration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7d7d7d;
+}
+
+.Exploration img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.Exploration ul {
+    list-style-type: none;/* Supprime les puces */
+    padding: 0;
+    width: min(100%, 1000px);
+}
+
+.Exploration li {
+    margin-bottom: 3rem;
+}
+
+.Exploration img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+
+.Exploration p,
+.Exploration h4 {
+    max-width: 600px;
+}
+
+/*galerie images*/
+.Galerie {
+  background-color: #060913;
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.Galerie .item:hover{
+    transform: scale(1.05);
+}
+
+.galerie-container {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
+
+.galerie-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px; 
+}
+
+.item {
+  width: 100%;
+  aspect-ratio: 1 / 1; /*format carré parfait pour chaque bloc */
+  overflow: hidden; /* Coupe ce qui dépasse proprement */
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Remplit le carré sans déformer la Lune */
+  display: block;
+}
+
+.animation-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  background: transparent;
+}
+
+.roulant {
+  width: 5%;  
+  border-radius: 50%; 
+  object-fit: cover;
+  
+  animation: rouleEtBouge 10s linear infinite;
+}
+
+/* animation globale */
+@keyframes rouleEtBouge {
+  0% {
+    transform: translateX(-100px) rotate(0deg); 
+  }
+  100% {
+    transform: translateX(100vw) rotate(360deg);
+  }
+}
+
+/*footer*/
+footer {
+    background-color: rgb(107, 107, 107);
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    margin-bottom: 1px;
+    padding: 1%;
+}
+
+
+footer img{
+    width: 130px;
+    /*inverser les couleurs logo*/
+      filter: invert(100%);
+}

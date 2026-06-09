@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgaMoon</title>
+    <link rel="stylesheet" href="accueil.css">
+    <!-- PWA -->
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#0a0a1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AgaMoon">
+    <link rel="apple-touch-icon" href="../LogoWebSite.png">
+    <!--police écriture-->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="../img/LogoWebSite.png" alt="Logo site web">
+            <a href="accueil.html">AgaMoon</a>
+        </div>
+        <ul class="menu-horizontal">
+            <li><a href="#chiffres">Données</a></li>
+            <li><a href="#Phases">Phases</a></li>
+            <li><a href="#Exploration">Exploration</a></li>
+            <li><a href="#Galerie">Galerie</a></li>
+            <li><a href="">Nexus</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="Presentation">
+        <img src="../img/photo-1657637760839-772d81f3e334.jpg" width="60%" alt="Lune sans fond" class="lune">
+
+        <div class="contenu-texte">
+            <h1>AgaMoon - Découvrir la Lune 🌜</h1>
+            <p class="distance">384 400 km de la Terre</p>
+            <p>Seul satellite naturel de la Terre, la Lune fascine l'humanité depuis la nuit des temps — entre science,
+                mythes et conquête spatiale.</p>
+        </div>
+    </section>
+
+    <section class="chiffres" id="chiffres">
+
+        <p>Données scientifiques</p>
+        <h2>La Lune en chiffres</h2>
+
+        <div class="grille-stats">
+            <div class="carte-stat">
+                <h3>3 474 km</h3>
+                <span class="label">DIAMÈTRE</span>
+                <p>Environ 1/4 du diamètre terrestre</p>
+            </div>
+
+            <div class="carte-stat">
+                <h3>27,3 j</h3>
+                <span class="label">RÉVOLUTION</span>
+                <p>Durée d'une orbite complète autour de la Terre</p>
+            </div>
+
+            <div class="carte-stat">
+                <h3>-173 / +127°C</h3>
+                <span class="label">TEMPÉRATURES</span>
+                <p>Extrêmes en surface selon l'exposition solaire</p>
+            </div>
+
+            <div class="carte-stat">
+                <h3>7,34 × 10²² kg</h3>
+                <span class="label">MASSE</span>
+                <p>Soit 1,2% de la masse de la Terre</p>
+            </div>
+
+            <div class="carte-stat">
+                <h3>1,62 m/s²</h3>
+                <span class="label">GRAVITÉ</span>
+                <p>6 fois moins forte que sur Terre</p>
+            </div>
+
+            <div class="carte-stat">
+                <h3>0 %</h3>
+                <span class="label">ATMOSPHÈRE</span>
+                <p>Quasi inexistante — seulement une exosphère ténue</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="Phases" id="Phases">
+        <h2>Les 8 phases de la Lune</h2>
+        <p>Un cycle lunaire complet dure environ 29,5 jours — une lunaison.</p>
+        <a href="https://calendrierlunaire.org/phases-lunaires">--- Sources ---</a>
+        <p class="MoonEmojis">
+            🌑🌒🌓🌔🌕🌖🌗🌘
+        </p>
+
+        <div>
+            <img src="../img/moon-29.gif" alt="La lune en GIF">
+            <img src="../img/8Phases/lune-libration-phases.gif" alt="lune-libration-phases">
+        </div>
+
+        <table>
+            <tr>
+                <td>Phase de la Lune</td>
+                <td>Image</td>
+            </tr>
+            <tr>
+                <td>Nouvelle Lune</td>
+                <td><img src="../img/8Phases/phase-nouvelle-lune.jpg" alt="phase-nouvelle-lune"></td>
+            </tr>
+            <tr>
+                <td>Premier Croissant</td>
+                <td><img src="../img/8Phases/premier-croissant.jpg" alt="phase-premier-quartier"></td>
+            </tr>
+            <tr>
+                <td>Premier Quartier</td>
+                <td><img src="../img/8Phases/phase-premier-quartier.jpg" alt="phase-premier-quartier"></td>
+            </tr>
+            <tr>
+                <td>Lune Gibbeuse Croissante</td>
+                <td><img src="../img/8Phases/phase-gibbeuse-croissante.jpg" alt="phase-gibbeuse-croissante"></td>
+            </tr>
+            <tr>
+                <td>Pleine Lune</td>
+                <td><img src="../img/8Phases/phase-pleine-lune.jpg" alt="phase-pleine-lune"></td>
+            </tr>
+            <tr>
+                <td>Lune Gibbeuse Décroissante</td>
+                <td><img src="../img/8Phases/phase-gibbeuse-decroissante.jpg" alt="phase-gibbeuse-decroissante"></td>
+            </tr>
+            <tr>
+                <td>Dernier Quartier</td>
+                <td><img src="../img/8Phases/phase-dernier-quartier.jpg" alt="phase-dernier-quartier"></td>
+            </tr>
+            <tr>
+                <td>Dernier Croissant</td>
+                <td><img src="../img/8Phases/dernier-croissant.jpg" alt="dernier-croissant"></td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section class="Exploration" id="Exploration">
+        <p>Histoire spatiale</p>
+        <h2>Exploration de la Lune</h2>
+
+        <ul>
+            <li>
+                <h4>Luna 2 - 12.09.1959 - URSS</h4>
+                <p>Premier objet humain à atteindre la surface de la Lune</p>
+                <img src="../img/Luna2.jpg" alt="Luna2">
+            </li>
+            <li>
+                <h4>Luna 9 - 31.01.1966 - URSS</h4>
+                <p>Premier atterrissage en douceur — premières photos depuis la surface</p>
+                <img src="../img/Luna9.jpg" alt="Luna9">
+            </li>
+            <li>
+                <h4>Apollo 11 - 16/24.07.1969 - USA</h4>
+                <p>Neil Armstrong et Buzz Aldrin — premiers humains sur la Lune, 20 juillet</p>
+                <img src="../img/Apollo11.jpg" alt="Apollo11">
+            </li>
+            <li>
+                <h4>Apollo 17 - 07/19.12.1972 - USA</h4>
+                <p>Dernière mission habitée. Harrison Schmitt, premier géologue sur la Lune.</p>
+                <img src="../img/Apollo17.jpg" alt="Apollo 17">
+            </li>
+            <li>
+                <h4>Chang'e 4 - 03.01.2019 - Chine</h4>
+                <p>Premier atterrissage sur la face cachée de la Lune, dans le cratère Von Kármán.</p>
+                <img src="../img/Chang'e 4.jpg" alt="Chang'e 4">
+            </li>
+            <li>
+                <h4>Chandrayaan-3 - 23.08.2023 (c'est mon anniv') - Inde</h4>
+                <p>Premier atterrissage au pôle sud lunaire — confirmation de glace d'eau.</p>
+                <img src="../img/Chandrayaan-3.jpg" alt="Chandrayaan-3">
+            </li>
+            <li>
+                <h4>Artemis III - 2026+ - USA</h4>
+                <p>Retour humain sur la Lune prévu — première femme sur la surface lunaire.</p>
+                <img src="../img/artemis-3.jpg" alt="Artemis III">
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="Galerie" id="Galerie">
+
+        <div class="galerie-container">
+            <h2>Galerie iPhone 16 (Agashae Premakumar)</h2>
+            <div class="galerie-grid">
+                <div class="item panorama"><img src="../img/MoonPhotos/Agashae/026-06-03_Quartier_Jour_CielBleu.png.jpeg" alt="Quartier Jour Ciel Bleu"></div>
+                <div class="item verticale"><img src="../img/MoonPhotos/Agashae/2026-06-03_Lune_Brillante_Halo.png.jpeg" alt="Lune Brillante Halo"></div>
+                <div class="item"><img src="../img/MoonPhotos/Agashae/2026-06-03_Lune_Fenetre.png.jpeg" alt="Lune Fenetre"></div>
+                <div class="item"><img src="../img/MoonPhotos/Agashae/2026-06-03_Lune_Nuages_Effet.png.jpeg" alt="Lune Nuages Effet"></div>
+                <div class="item large"><img src="../img/MoonPhotos/Agashae/2026-06-03_Pleine_Orange_Poteau.png.jpeg" alt="Pleine Orange Poteau"></div>
+                <div class="item"><img src="../img/MoonPhotos/Agashae/2026-06-03_Pleine_Reflet.png.jpeg" alt="Pleine Reflet"></div>
+            </div>
+        </div>
+
+        <div class="galerie-container">
+            <h2>Galerie Samsung S24 Ultra (Massimo Carota)</h2>
+            <div class="galerie-grid">
+                <div class="item panorama"><img src="../img/MoonPhotos/Massimo/2026-06-05_Gibbeuse_Detaillee_01.png.jpg" alt="Gibbeuse Detaillee 01"></div>
+                <div class="item verticale"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Claire_01.png.jpg" alt="Pleine Claire 01"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Croissant.png.jpg" alt="Croissant"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Quartier.png.jpg" alt="Quartier"></div>
+                <div class="item large"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Rousse_01.png.jpg" alt="Pleine Rousse 01"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Gibbeuse_Detaillee_02.png.jpg" alt="Gibbeuse Detaillee 02"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Brumeux_01.png.jpg" alt="Pleine Brumeux 01"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Brumeux_02.png.jpg" alt="Pleine Brumeux 02"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Brumeux_03.png.jpg" alt="Pleine Brumeux 03"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Brumeux_04.png.jpg" alt="Pleine Brumeux 04"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Claire_02.png.jpg" alt="Pleine Claire 02"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Claire_03.png.jpg" alt="Pleine Claire 03"></div>
+                <div class="item"><img src="../img/MoonPhotos/Massimo/2026-06-05_Pleine_Rousse_02.png.jpg" alt="Pleine Rousse 02"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="animation-container">
+        <img src="../img/Transparent/earth.png" class="roulant" alt="Terre qui roule">
+        <img src="../img/Transparent/Jupiter.png" class="roulant" alt="Jupiter qui roule">
+        <img src="../img/Transparent/Mars.webp" class="roulant" alt="Mars qui roule">
+        <img src="../img/Transparent/Mercure.webp" class="roulant" alt="Mercure qui roule">
+        <img src="../img/Transparent/MoonTransparent.png" class="roulant" alt="Lune qui roule">
+        <img src="../img/Transparent/Neptune.webp" class="roulant" alt="Neptune qui roule">
+        <img src="../img/Transparent/Pluton.webp" class="roulant" alt="Pluton qui roule">
+        <img src="../img/Transparent/Saturn_from_Hubble.png" class="roulant" alt="Saturne qui roule">
+        <img src="../img/Transparent/Uranus.png" class="roulant" alt="Uranus qui roule">
+        <img src="../img/Transparent/Venus-PNG-Background.png" class="roulant" alt="Vénus qui roule">
+    </div>
+
+
+    <footer>
+        <img src="../img/LogoWebSite.png" alt="Logo site web">
+        <a href="accueil.html">AgaMoon</a>
+        <a href="">Nexus</a>
+    </footer>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("../service-worker.js")
+                    .then((reg) => console.log("[PWA] Service Worker enregistré :", reg.scope))
+                    .catch((err) => console.error("[PWA] Erreur :", err));
+            });
+        }
+    </script>
+
+</body>
+
+</html>
