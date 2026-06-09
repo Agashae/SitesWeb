@@ -58,28 +58,23 @@ SitesWeb/
 
 Une fois publié avec GitHub Pages :
 
-### Portfolio
-
-```text
-https://votre-pseudo.github.io/nom-du-repo/
-```
 
 ### Projet Nexus
 
 ```text
-https://votre-pseudo.github.io/nom-du-repo/Nexus/
+https://agashae.github.io/SitesWeb/Nexus/HTML/Accueil/Accueil.html
 ```
 
 ### Projet RedBull
 
 ```text
-https://votre-pseudo.github.io/nom-du-repo/RedBull/
+https://agashae.github.io/SitesWeb/RedBull/Projet/accueil.html
 ```
 
 ### Projet MoonWebsite
 
 ```text
-https://votre-pseudo.github.io/nom-du-repo/MoonWebsite/
+https://agashae.github.io/SitesWeb/MoonWebsite/code/accueil.html
 ```
 
 ---
