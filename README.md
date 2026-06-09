@@ -4,7 +4,7 @@ Ce repo GitHub regroupe tous mes projets web (école/perso).
 
 ---
 
-## C'est GitHub Pages ❓
+## C'est quoi GitHub Pages ❓
 
 
 
@@ -35,18 +35,20 @@ Chaque dossier représente un site indépendant disposant de sa propre structure
 ```text
 SitesWeb/
 │
-├── index.html              # Lien vers les autres sites
+├── index.html                   # Lien vers les autres sites
 │
-├── Nexus/                  # Projet Nexus
-│   └── index.html
+├── Nexus/                       # Projet Nexus
+│   └── HTML/
+│       └── Accueil/
+│           └── Accueil.html
 │
-├── RedBull/                # Projet RedBull
-│   └── index.html
+├── RedBull/                     # Projet RedBull
+│   └── Projet/
+│       └── accueil.html
 │
-├── MoonWebsite/            # Projet MoonWebsite
-│   └── index.html
-│
-├── Assets/                 # Ressources partagées (images, icônes, etc.)
+├── MoonWebsite/                 # Projet MoonWebsite
+│   └── code/
+│       └── accueil.html
 │
 └── README.md
 ```
@@ -56,26 +58,22 @@ SitesWeb/
 
 ## 🔗 URLs d'accès
 
-Une fois publié avec GitHub Pages :
+Une fois publié avec GitHub Pages : https://agashae.github.io/SitesWeb/
 
 
 ### Projet Nexus
 
-```text
+
 https://agashae.github.io/SitesWeb/Nexus/HTML/Accueil/Accueil.html
-```
+
 
 ### Projet RedBull
 
-```text
 https://agashae.github.io/SitesWeb/RedBull/Projet/accueil.html
-```
 
 ### Projet MoonWebsite
 
-```text
 https://agashae.github.io/SitesWeb/MoonWebsite/code/accueil.html
-```
 
 ---
 
