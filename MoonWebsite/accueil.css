@@ -85,6 +85,10 @@ h2 {
     text-align: center;
 }
 
+/*met en blanc toute la div, pas que quand je met sur le p*/
+.carte-stat:hover p{
+    color: #ffffff;
+}
 
 .grille-stats {
     display: grid;
