@@ -2,7 +2,7 @@
 
  Site web éducatif sur la Lune, réalisé durant le **DemoMot 2025-2026** — puis transformé en application web installable (PWA)
 
- **[Ouvrir AgaMoon](https://agashae.github.io/MoonWebsite/code/accueil.html)**
+ **[Ouvrir AgaMoon](https://agashae.github.io/MoonWebsite/)**
 
 ---
 
@@ -46,21 +46,32 @@ Le projet a été réalisé entièrement en **HTML / CSS** dans le cadre du **De
 
 ```
 MoonWebsite/
-├── code/
-│   ├── accueil.html        # Page principale
-│   └── accueil.css         # Styles
 ├── img/
-│   ├── 8Phases/            # Photos des 8 phases lunaires
-│   ├── MoonPhotos/         # Photos perso (iPhone 16 & Samsung S24 Ultra)
+│   ├── 8Phases/                    # Photos des 8 phases lunaires
+│   ├── MoonPhotos/                 # Photos perso (iPhone 16 & Samsung S24 Ultra)
 │   │   ├── Agashae/
 │   │   └── Massimo/
-│   │── Screenshots/ 
-│   │── Transparent/        # Planètes animées (footer)
-│   │── Images générales/   # Planètes animées (footer)
-    └── LogoWebSite.png     # Logo AgaMoon
-├── manifest.json           # Config PWA
-├── service-worker.js       # Cache hors-ligne
-└── README.md
+│   ├── Screenshots/                # Captures d'écran
+│   ├── Transparent/                # Planètes roulantes (footer)
+│   ├── Images générales/           # Images des missions spatiales et fonds d'écran
+│   │   ├── Apollo11.jpg
+│   │   ├── Apollo17.jpg
+│   │   ├── artemis-3.jpg
+│   │   ├── bg-minimalist.jpg
+│   │   ├── Chandrayaan-3.jpg
+│   │   ├── Chang'e 4.jpg
+│   │   ├── Luna2.jpg
+│   │   ├── Luna9.jpg
+│   │   ├── moon-29.gif
+│   │   ├── photo-1657637760839-772d81f3e334.jpg
+│   │   └── TheHuntforArtemis.jpeg
+│   └── LogoWebSite.png             # Logo AgaMoon
+├── CNAME                           # Configuration du domaine personnalisé (si GitHub Pages)
+├── index.html                      # Page principale
+├── style.css                       # Feuilles de style
+├── manifest.json                   # Configuration PWA
+├── service-worker.js               # Gestion du cache hors-ligne
+└── README.md                       # Documentation du projet
 ```
 
 ---
@@ -69,7 +80,7 @@ MoonWebsite/
 
 Le site est hébergé gratuitement via **GitHub Pages** et accessible à l'adresse :
 
->  **[https://agashae.github.io/MoonWebsite/code/accueil.html](https://agashae.github.io/MoonWebsite/code/accueil.html)**
+>  **[https://agashae.github.io/MoonWebsite/](https://agashae.github.io/MoonWebsite/)**
 
 GitHub Pages a été choisi pour deux raisons :
 - Accès depuis n'importe quel réseau (y compris celui de l'école)
@@ -107,11 +118,11 @@ AgaMoon est une **Progressive Web App** — elle peut être installée comme une
 
 ### Captures d'écran
 
-| Installation sur Chrome PC | App ouverte sur Chrome PC | App sur l'écran d'accueil iPhone |
+| Installation sur Chrome PC | App ouverte sur Chrome PC | App sur l'écran d'accueil iPhone (A) |
 |:-:|:-:|:-:|
 | <img src="img/Screenshots/InstallerAppChromePC.png" width="300"> | <img src="img/Screenshots/AppChromeOnPC.png" width="300"> | <img src="img/Screenshots/AppHomeOniPhone.jpg" width="200"> |
 
-| App ouverte sur Safari iPhone | Site web dans Safari iPhone | Menu de partage Safari iPhone |
+| App ouverte | Site web dans Safari iPhone | Menu de partage Safari iPhone |
 |:-:|:-:|:-:|
 | <img src="img/Screenshots/AppSafariOniPhone.jpg" width="200"> | <img src="img/Screenshots/WebsiteSafariOniPhone.jpg" width="200"> | <img src="img/Screenshots/WebsiteShareOniPhone.jpg" width="200"> |
 
@@ -122,7 +133,14 @@ AgaMoon est une **Progressive Web App** — elle peut être installée comme une
 
 **`service-worker.js`** — met en cache toutes les ressources du site au premier chargement, puis les sert localement pour un accès hors-ligne
 
+> Si ça ne marche pas, vider le cache
+
 ---
+## CNAME
+achat sur http://infomaniak.com/fr pour ~ 4.-/an
+>  **[https://agashae.space](https://agashae.space)**
+
+
 
 ## 🛠️ Technologies utilisées
 
@@ -143,5 +161,13 @@ AgaMoon est une **Progressive Web App** — elle peut être installée comme une
 - Photos des phases lunaires — [calendrierlunaire.org](https://calendrierlunaire.org/phases-lunaires)
 
 ---
+
+## Utilisation de l'IA
+L’IA a été utilisé pour m’aider à :
+•	Structurer/nettoyer mon code HTML/CSS
+•	Création des fichiers JS/JSON du PWA
+•	Me renseigner sur le PWA et sur l’utilisation de GitHub
+•	Ajouter mon CdC dans le Readme
+
 
 *Projet réalisé dans le cadre du DemoMot — 2026*

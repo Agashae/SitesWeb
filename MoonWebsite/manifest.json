@@ -1,25 +1,22 @@
 {
-    "name": "AgaMoon - Découvrir la Lune",
-    "short_name": "AgaMoon",
-    "description": "Seul satellite naturel de la Terre, explorez la Lune — science, mythes et conquête spatiale.",
-    "start_url": "/MoonWebsite/code/accueil.html",
-    "display": "standalone",
-    "background_color": "#0a0a1a",
-    "theme_color": "#0a0a1a",
-    "orientation": "portrait-primary",
-    "lang": "fr",
-    "icons": [
-        {
-            "src": "/LogoWebSite.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "/LogoWebSite.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "any maskable"
-        }
-    ]
+  "name": "AgaMoon - Découvrir la Lune",
+  "short_name": "AgaMoon",
+  "description": "Explorez la Lune à travers les données scientifiques, son histoire et de magnifiques galeries photos.",
+  "start_url": "https://agashae.space/",
+  "display": "standalone",
+  "background_color": "#05050f",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "img/LogoWebSite.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/LogoWebSite.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
