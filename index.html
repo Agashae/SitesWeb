@@ -3,11 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Agashae Premakumar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <a href="./Nexus/HTML/Accueil/Accueil.html">Lien vers Nexus 👨‍🚀<br></a>
-    <a href="./RedBull/Projet/accueil.html">Lien vers RB 🍹</a><br>
-    <a href="./MoonWebsite/code/accueil.html">Lien vers AgaMoon 🌚</a>
+    <!-- Le Bureau (Desktop) avec le fond d'écran -->
+    <div id="desktop" class="desktop">
+        
+        <!-- Contenu central du bureau : Logo et H1 -->
+        <div class="desktop-center">
+            <img src="LogoWebSite-removebg-preview.png" alt="Logo Agashae" class="desktop-logo">
+            <h1 class="desktop-h1">Agashae Premakumar</h1>
+        </div>
+
+        <!-- Icônes sur le bureau -->
+        <div class="desktop-icons">
+            <div class="desktop-icon" onclick="openWindow('window-apropos')">
+                <i class="ph ph-user"></i>
+                <span>À propos</span>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('window-projets')">
+                <i class="ph ph-folder-open"></i>
+                <span>Projets</span>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('window-competences')">
+                <i class="ph ph-lightning"></i>
+                <span>Compétences</span>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('window-contact')">
+                <i class="ph ph-envelope-simple"></i>
+                <span>Contact</span>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('window-readme')">
+                <i class="ph ph-file-text"></i>
+                <span>Readme</span>
+            </div>
+        </div>
+
+        <!-- FENÊTRE : À PROPOS -->
+        <div id="window-apropos" class="window hidden">
+            <div class="window-header">
+                <div class="window-title"><i class="ph ph-user"></i> À propos</div>
+                <div class="window-controls">
+                    <button class="control-btn close" onclick="closeWindow('window-apropos')"><i class="ph ph-x"></i></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="simple-content apropos-content">
+                    <div class="apropos-header">
+                        <img src="image.jpg" alt="Photo de Profil" class="avatar">
+                        <div>
+                            <h1>Agashae Premakumar</h1>
+                            <p>Curieux, déterminé et logique, je suis passionné par l'informatique.</p>
+                            <br>
+                            <a href="CV_AgashaePremakumar.pdf" target="_blank" class="btn"><i class="ph ph-download-simple"></i> Voir mon CV</a>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <h3>Études :</h3>
+                    <ul>
+                        <li><strong>2024-2025 :</strong> CFC + Maturité (ETML)</li>
+                        <li><strong>2021-2024 :</strong> OCOM MITIC (EPSCE)</li>
+                    </ul>
+                    <br>
+                    <h3>Expériences :</h3>
+                    <ul>
+                        <li><strong>2024-2025 :</strong> Apprentissage à l'ETML</li>
+                        <li><strong>2023 :</strong> Stage CPNV et Solution Kläy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FENÊTRE : PROJETS -->
+        <div id="window-projets" class="window hidden" style="top: 80px; left: 80px;">
+            <div class="window-header">
+                <div class="window-title"><i class="ph ph-folder-open"></i> Projets</div>
+                <div class="window-controls">
+                    <button class="control-btn close" onclick="closeWindow('window-projets')"><i class="ph ph-x"></i></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="simple-content">
+                    <h1>Mes Projets</h1>
+                    <p>Voici quelques projets sur lesquels j'ai travaillé :</p>
+
+                    <div class="card">
+                        <h3>AgaMoon</h3>
+                        <p>Un site sur la lune codé en HTML et CSS.</p>
+                        <a href="https://agashae.space/" target="_blank">Visiter le site</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Nexus</h3>
+                        <p>Un projet fascinant sur l'astronomie.</p>
+                        <a href="#" class="disabled-link">En savoir plus (Bientôt)</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Red Bull</h3>
+                        <p>Un site dédié à l'univers Red Bull (en cours de création).</p>
+                        <a href="#" class="disabled-link">En savoir plus (Bientôt)</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Mon GitHub</h3>
+                        <p>Retrouvez tous mes codes sources.</p>
+                        <a href="https://github.com/Agashae" target="_blank">Voir mon GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FENÊTRE : COMPÉTENCES -->
+        <div id="window-competences" class="window hidden" style="top: 110px; left: 110px;">
+            <div class="window-header">
+                <div class="window-title"><i class="ph ph-lightning"></i> Compétences</div>
+                <div class="window-controls">
+                    <button class="control-btn close" onclick="closeWindow('window-competences')"><i class="ph ph-x"></i></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="simple-content">
+                    <h1>Connaissances</h1>
+                    <ul>
+                        <li><strong>Programmation :</strong> C#, HTML, CSS</li>
+                        <li><strong>Bases de données :</strong> MCD/MLD, MySQL</li>
+                        <li><strong>Réseaux :</strong> IoT, AD, DHCP, DNS</li>
+                        <li><strong>Bureautique & Création :</strong> Word, Excel, Premiere Pro, Photoshop</li>
+                    </ul>
+                    <br>
+                    <h3>Langues</h3>
+                    <ul>
+                        <li>Français (Courant)</li>
+                        <li>Tamoul (Maternelle)</li>
+                        <li>Anglais & Allemand (Scolaire)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FENÊTRE : CONTACT -->
+        <div id="window-contact" class="window hidden" style="top: 140px; left: 140px;">
+            <div class="window-header">
+                <div class="window-title"><i class="ph ph-envelope-simple"></i> Contact</div>
+                <div class="window-controls">
+                    <button class="control-btn close" onclick="closeWindow('window-contact')"><i class="ph ph-x"></i></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="simple-content">
+                    <h1>Me Contacter</h1>
+                    <p><i class="ph ph-phone"></i> <strong>Téléphone :</strong> 078 226 30 72</p>
+                    <p><i class="ph ph-envelope-simple"></i> <strong>Email :</strong> agashae2008@gmail.com</p>
+                    <p><i class="ph ph-map-pin"></i> <strong>Adresse :</strong> Rue du Jura 32, 1373 Chavornay</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FENÊTRE : README -->
+        <div id="window-readme" class="window hidden" style="top: 170px; left: 170px;">
+            <div class="window-header">
+                <div class="window-title"><i class="ph ph-file-text"></i> Readme</div>
+                <div class="window-controls">
+                    <button class="control-btn close" onclick="closeWindow('window-readme')"><i class="ph ph-x"></i></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="simple-content">
+                    <h1>Bienvenue sur mon Portfolio OS !</h1>
+                    <p>Ce site a été conçu pour ressembler à un système d'exploitation.</p>
+                    <p>Mes Hobbys :</p>
+                    <ul>
+                        <li>Montage vidéo</li>
+                        <li>Jeux-vidéo</li>
+                        <li>Vélo</li>
+                        <li>Badminton</li>
+                    </ul>
+                    <br>
+                    <p>Modules ETML Acquis : C187, C216, I117, I122, I123, I162, I164, I231, I293, I306, I319, I431.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barre des tâches (Taskbar) en bas -->
+        <div class="taskbar">
+            <div class="taskbar-left">
+                <!-- Les icônes des applications dans la barre des tâches -->
+                <div class="taskbar-app" onclick="openWindow('window-apropos')"><i class="ph ph-user"></i></div>
+                <div class="taskbar-app" onclick="openWindow('window-projets')"><i class="ph ph-folder-open"></i></div>
+                <div class="taskbar-app" onclick="openWindow('window-competences')"><i class="ph ph-lightning"></i></div>
+                <div class="taskbar-app" onclick="openWindow('window-contact')"><i class="ph ph-envelope-simple"></i></div>
+                <div class="taskbar-app" onclick="openWindow('window-readme')"><i class="ph ph-file-text"></i></div>
+            </div>
+            <div class="taskbar-right" style="display: flex; gap: 15px; align-items: center; color: var(--text-main);">
+                <div class="date" id="date" style="font-size: 14px; font-weight: 500;">00/00/0000</div>
+                <div class="clock" id="clock" style="font-size: 14px; font-weight: 500;">00:00</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script JavaScript -->
+    <script src="main.js"></script>
 </body>
 </html>

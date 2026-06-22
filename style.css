@@ -1,0 +1,325 @@
+/* 
+   Style global simple et compréhensible (Niveau HTML/CSS de base).
+   Thème : Sombre, Professionnel et Minimaliste.
+*/
+
+:root {
+    /* Couleurs du thème sombre */
+    --bg-window: rgba(25, 25, 30, 0.95);
+    --text-main: #eaeaea; 
+    --text-muted: #888899; 
+    --border-color: rgba(255, 255, 255, 0.1); 
+    --hover-color: rgba(255, 255, 255, 0.08); 
+    --accent-color: #4da6ff; 
+    --font-main: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-main);
+    overflow: hidden; 
+    user-select: none; 
+    background-color: #000; 
+}
+
+/* --- Le Bureau et le fond d'écran --- */
+.desktop {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Contenu Central du Bureau (Logo et Titre) --- */
+.desktop-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Pour centrer parfaitement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 10; /* Derrière les fenêtres mais devant le fond */
+    pointer-events: none; /* On ne peut pas cliquer dessus, c'est juste de la déco */
+}
+
+.desktop-logo {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5)); /* Ombre pour le logo */
+}
+
+.desktop-h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Ombre pour bien lire sur le fond */
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* --- Icônes sur le bureau --- */
+.desktop-icons {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: flex-start;
+    flex: 1;
+    z-index: 20; /* Devant le titre central */
+}
+
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 90px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: #fff; 
+}
+
+.desktop-icon:hover {
+    background: rgba(255, 255, 255, 0.15); 
+}
+
+.desktop-icon i {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+}
+
+.desktop-icon span {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Barre des tâches (en bas) --- */
+.taskbar {
+    height: 50px;
+    background: rgba(10, 10, 15, 0.8); 
+    backdrop-filter: blur(15px); 
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000; 
+}
+
+.taskbar-left {
+    display: flex;
+    gap: 10px;
+}
+
+.taskbar-app {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.taskbar-app:hover {
+    background: var(--hover-color);
+}
+
+.taskbar-app i {
+    font-size: 24px;
+    color: var(--text-main);
+}
+
+/* --- Les Fenêtres (Applications) --- */
+.window {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 600px;
+    height: 400px;
+    background: var(--bg-window);
+    backdrop-filter: blur(10px); 
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7); 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 100;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.window.hidden {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    pointer-events: none; 
+}
+
+.window-header {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05); 
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    cursor: grab; 
+}
+
+.window-header:active {
+    cursor: grabbing;
+}
+
+.window-title {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-main);
+}
+
+.control-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.control-btn:hover {
+    color: #ff5555; 
+}
+
+.window-content {
+    flex: 1;
+    overflow-y: auto; 
+    padding: 20px;
+    user-select: text; 
+}
+
+.window-content::-webkit-scrollbar {
+    width: 8px;
+}
+.window-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+.window-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* --- Contenu Interne des Fenêtres --- */
+
+/* Style spécial pour la section À propos */
+.apropos-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* Pour que l'image ne soit pas déformée */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+    border: 1px solid var(--border-color);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 20px 0;
+}
+
+.simple-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.simple-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.simple-content p, .simple-content li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+.simple-content ul {
+    margin-left: 20px;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.03); 
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card a.disabled-link {
+    color: var(--text-muted);
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.card a:not(.disabled-link):hover {
+    text-decoration: underline;
+}
