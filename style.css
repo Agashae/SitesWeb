@@ -1,325 +1,298 @@
-/* 
-   Style global simple et compréhensible (Niveau HTML/CSS de base).
-   Thème : Sombre, Professionnel et Minimaliste.
-*/
-
-:root {
-    /* Couleurs du thème sombre */
-    --bg-window: rgba(25, 25, 30, 0.95);
-    --text-main: #eaeaea; 
-    --text-muted: #888899; 
-    --border-color: rgba(255, 255, 255, 0.1); 
-    --hover-color: rgba(255, 255, 255, 0.08); 
-    --accent-color: #4da6ff; 
-    --font-main: 'Inter', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
+*{
+    /*sans ca la barre du bas depassait de l'ecran a cause du padding*/
     box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-main);
-    color: var(--text-main);
-    overflow: hidden; 
-    user-select: none; 
-    background-color: #000; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    color: #eaeaea;
+    background-color: black;
 }
 
-/* --- Le Bureau et le fond d'écran --- */
-.desktop {
+/*--- LA PAGE D'ACCUEIL (le bureau) ---*/
+
+.bureau {
     width: 100vw;
     height: 100vh;
-    background-image: url('bg.png');
-    background-size: cover;
-    background-position: center;
+    background: radial-gradient(circle at 75% 80%, #17140d 0%, #0a0a0c 45%, #050506 100%);
     position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-/* --- Contenu Central du Bureau (Logo et Titre) --- */
-.desktop-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Pour centrer parfaitement */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    z-index: 10; /* Derrière les fenêtres mais devant le fond */
-    pointer-events: none; /* On ne peut pas cliquer dessus, c'est juste de la déco */
-}
-
-.desktop-logo {
-    width: 120px;
-    height: auto;
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5)); /* Ombre pour le logo */
-}
-
-.desktop-h1 {
-    font-size: 42px;
-    font-weight: 700;
-    color: #ffffff;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Ombre pour bien lire sur le fond */
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-/* --- Icônes sur le bureau --- */
-.desktop-icons {
-    padding: 20px;
-    display: flex;
-    flex-direction: column; 
-    gap: 20px;
-    align-items: flex-start;
-    flex: 1;
-    z-index: 20; /* Devant le titre central */
-}
-
-.desktop-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    width: 90px;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.2s;
-    color: #fff; 
-}
-
-.desktop-icon:hover {
-    background: rgba(255, 255, 255, 0.15); 
-}
-
-.desktop-icon i {
-    font-size: 40px;
-    color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
-}
-
-.desktop-icon span {
-    font-size: 13px;
-    font-weight: 500;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-/* --- Barre des tâches (en bas) --- */
-.taskbar {
-    height: 50px;
-    background: rgba(10, 10, 15, 0.8); 
-    backdrop-filter: blur(15px); 
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 1000; 
-}
-
-.taskbar-left {
-    display: flex;
-    gap: 10px;
-}
-
-.taskbar-app {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.taskbar-app:hover {
-    background: var(--hover-color);
-}
-
-.taskbar-app i {
-    font-size: 24px;
-    color: var(--text-main);
-}
-
-/* --- Les Fenêtres (Applications) --- */
-.window {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 600px;
-    height: 400px;
-    background: var(--bg-window);
-    backdrop-filter: blur(10px); 
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7); 
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
-    z-index: 100;
-    transition: transform 0.2s, opacity 0.2s;
 }
 
-.window.hidden {
-    opacity: 0;
-    transform: scale(0.95) translateY(10px);
-    pointer-events: none; 
+/*texte de presentation en bas a droite du bureau*/
+.bureau-intro {
+    position: absolute;
+    right: 60px;
+    bottom: 120px;
+    text-align: right;
+    max-width: 650px;
 }
 
-.window-header {
-    height: 40px;
-    background: rgba(255, 255, 255, 0.05); 
-    border-bottom: 1px solid var(--border-color);
+.bureau-intro .tag {
+    color: #d4a656;
+    font-size: 18px;
+    margin: 0 0 14px 0;
+}
+
+/*agrandi vu que le site est tres minimaliste, ca fait plus vide sinon*/
+.bureau-intro h1 {
+    font-size: 68px;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.bureau-intro .sous-titre {
+    color: #8a8f98;
+    font-size: 19px;
+    margin: 16px 0 30px 0;
+}
+
+.bureau-intro .aide {
+    color: #565a62;
+    font-size: 15px;
+    margin: 0;
+}
+
+/*icones a gauche du bureau*/
+.icones {
+    padding: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.icone {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0 15px;
-    cursor: grab; 
+    gap: 10px;
+    color: #b7bac0;
+    text-decoration: none;
 }
 
-.window-header:active {
-    cursor: grabbing;
+.icone:hover {
+    color: white;
 }
 
-.window-title {
-    font-size: 14px;
-    font-weight: 600;
+.icone i {
+    font-size: 46px;
+    color: #d4a656;
+}
+
+.icone span {
+    font-size: 16px;
+    text-align: center;
+}
+
+/*--- LES AUTRES PAGES (apropos, projets, etc) ---*/
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at 75% 20%, #17140d 0%, #0a0a0c 45%, #050506 100%);
+}
+
+/*menu du haut avec les liens vers les autres pages*/
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 50px;
+    border-bottom: 1px solid rgba(212, 166, 86, 0.2);
+}
+
+.page-nav .retour {
+    color: #d4a656;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--text-main);
 }
 
-.control-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
+.nav-liens {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-liens a {
+    color: #b7bac0;
+    text-decoration: none;
     font-size: 16px;
-    color: var(--text-muted);
-    transition: color 0.2s;
 }
 
-.control-btn:hover {
-    color: #ff5555; 
+.nav-liens a:hover {
+    color: white;
 }
 
-.window-content {
+/*page ou on est actuellement, en dore*/
+.nav-liens a.actif {
+    color: #d4a656;
+    font-weight: 700;
+}
+
+/*le contenu de la page, centre et pas trop large pour rester lisible*/
+.page-contenu {
     flex: 1;
-    overflow-y: auto; 
-    padding: 20px;
-    user-select: text; 
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 40px;
 }
 
-.window-content::-webkit-scrollbar {
-    width: 8px;
-}
-.window-content::-webkit-scrollbar-track {
-    background: transparent;
-}
-.window-content::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+.page-contenu h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 18px;
 }
 
-/* --- Contenu Interne des Fenêtres --- */
+.page-contenu h3 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: #d4a656;
+    font-size: 20px;
+}
 
-/* Style spécial pour la section À propos */
-.apropos-header {
+.page-contenu p, .page-contenu li {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #c7c9cd;
+}
+
+.page-contenu ul {
+    margin-left: 22px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(212, 166, 86, 0.2);
+    margin: 25px 0;
+}
+
+/*page a propos*/
+.apropos-haut {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    object-fit: cover; /* Pour que l'image ne soit pas déformée */
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    /*sinon la photo est ecrasee si elle est pas carree*/
+    object-fit: cover;
+    border: 1px solid rgba(212, 166, 86, 0.3);
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background 0.2s;
-    border: 1px solid var(--border-color);
-}
-
-.btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.divider {
-    border: 0;
-    height: 1px;
-    background: var(--border-color);
-    margin: 20px 0;
-}
-
-.simple-content h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.simple-content h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #fff;
-}
-
-.simple-content p, .simple-content li {
-    font-size: 14px;
-    line-height: 1.6;
-    color: var(--text-main);
-}
-
-.simple-content ul {
-    margin-left: 20px;
-}
-
-.card {
-    border: 1px solid var(--border-color);
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 15px;
-    background: rgba(255, 255, 255, 0.03); 
-}
-
-.card h3 {
-    margin-top: 0;
-}
-
-.card a {
+.bouton {
     display: inline-block;
-    margin-top: 10px;
-    color: var(--accent-color);
+    margin-top: 12px;
+    padding: 12px 20px;
+    background: rgba(212, 166, 86, 0.12);
+    border: 1px solid rgba(212, 166, 86, 0.4);
+    border-radius: 6px;
+    color: #d4a656;
     text-decoration: none;
-    font-weight: 500;
+    font-size: 16px;
 }
 
-.card a.disabled-link {
-    color: var(--text-muted);
-    cursor: not-allowed;
-    text-decoration: none;
+.bouton:hover {
+    background: rgba(212, 166, 86, 0.22);
 }
 
-.card a:not(.disabled-link):hover {
-    text-decoration: underline;
+/*page projets*/
+.carte {
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 18px;
+    background: rgba(255,255,255,0.02);
+}
+
+.carte h3 {
+    margin: 0 0 8px 0;
+}
+
+.carte a {
+    color: #d4a656;
+    font-size: 16px;
+}
+
+/*--- barre des taches en bas, sur toutes les pages ---*/
+.taskbar {
+    width: 100%;
+    height: 55px;
+    background: rgba(10,9,8,0.85);
+    border-top: 1px solid rgba(212, 166, 86, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+/*sur la page d'accueil elle est collee en bas de l'ecran*/
+.bureau .taskbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.taskbar p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #b7bac0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.taskbar-nom {
+    font-weight: 700;
+    color: #eaeaea;
+}
+
+/*petit rond avant le texte, comme un voyant "en ligne"*/
+.point {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d4a656;
+    display: inline-block;
+}
+
+/*--- responsive ---*/
+@media (max-width: 700px) {
+
+    .bureau-intro {
+        left: 30px;
+        right: 30px;
+        text-align: left;
+        bottom: 90px;
+    }
+
+    .bureau-intro h1 {
+        font-size: 40px;
+    }
+
+    .page-nav {
+        padding: 20px 25px;
+    }
+
+    .page-contenu {
+        padding: 40px 25px;
+    }
 }
