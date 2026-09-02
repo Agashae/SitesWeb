@@ -30,6 +30,13 @@ body {
     max-width: 650px;
 }
 
+/*mon logo/signature au dessus du texte de presentation*/
+.logo-hero {
+    width: 160px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 .bureau-intro .tag {
     color: #d4a656;
     font-size: 18px;
@@ -263,6 +270,12 @@ hr {
 .taskbar-nom {
     font-weight: 700;
     color: #eaeaea;
+}
+
+/*petit logo dans la barre des taches, a cote du nom*/
+.logo-taskbar {
+    height: 26px;
+    width: auto;
 }
 
 /*petit rond avant le texte, comme un voyant "en ligne"*/
