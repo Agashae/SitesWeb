@@ -278,6 +278,36 @@ hr {
     width: auto;
 }
 
+/*les 5 icones du bureau, reprises au centre de la taskbar pour naviguer partout*/
+.taskbar-icones {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.taskbar-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    color: #b7bac0;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.taskbar-icone:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/*icone de la page ou on est actuellement, en dore comme dans nav-liens*/
+.taskbar-icone.actif {
+    color: #d4a656;
+    background: rgba(212, 166, 86, 0.12);
+}
+
 /*petit rond avant le texte, comme un voyant "en ligne"*/
 .point {
     width: 7px;
@@ -307,5 +337,24 @@ hr {
 
     .page-contenu {
         padding: 40px 25px;
+    }
+
+    .taskbar {
+        padding: 0 15px;
+    }
+
+    .taskbar-icones {
+        gap: 8px;
+    }
+
+    .taskbar-icone {
+        width: 30px;
+        height: 30px;
+        font-size: 17px;
+    }
+
+    /*plus de place pour les icones, on garde juste le logo*/
+    .taskbar-nom span {
+        display: none;
     }
 }
