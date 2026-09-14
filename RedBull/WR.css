@@ -33,6 +33,12 @@ nav p{
     color: #fd9307;
 font-size: xxx-large;
 }
+nav p:hover{
+        color: #ffffff;
+font-size: xxx-large;
+scale: calc(1.02);
+transition: 0.6s;
+}
 
 .logo {
     margin-top: 15px;
@@ -51,6 +57,7 @@ font-size: xxx-large;
 }
 
 h1{
+    margin: 5%;
     color: white;
 text-align: center;
 font-size: xxx-large;
@@ -87,6 +94,12 @@ font-size: xxx-large;
     border-radius: 5px;
 }
 
+.mini-barre{
+    border-bottom: 15px solid rgb(255, 255, 255);
+        margin-bottom: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
+}
 
 .image-hover {
     position: relative;

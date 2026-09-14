@@ -1,0 +1,4 @@
+Le lien vers votre repo Github : https://github.com/Agashae/i293_ExoProjet
+Le lien vers votre site déployé sur l'espace que l'on vous a fourni : https://cin1d-agashae.w3.pm2etml.ch/accueil.html
+
+Dans votre site, vous devez inclure une page qui fait office de rapport : https://cin1d-agashae.w3.pm2etml.ch/rapport.html

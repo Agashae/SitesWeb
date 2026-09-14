@@ -105,6 +105,7 @@ Fin du projet : 26.06.26
 | Créer la def calculs (poids, hauteur saut, temps voyage, âge cosmique) | 1 séquence de 4 périodes | 22.06.26 |
 | Création PowerPoint pour la présentation | 1 séquence de 4 périodes | 22.06.26 |
 | Régler problème PWA sur mobile + restructurer repo | 1 séquence de 6 périodes | 23.06.26 |
+| Ajout nouvelles images (Rencontre Célestes) | 1 séquence de 2 périodes | 23.06.26 |
 
 ---
 

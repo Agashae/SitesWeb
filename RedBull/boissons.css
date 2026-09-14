@@ -51,10 +51,16 @@ nav a {
 }
 
 nav p{
-    color: #fd9307;
+    color: #ff9900;
 font-size: xxx-large;
 }
 
+nav p:hover{
+        color: #ffffff;
+font-size: xxx-large;
+scale: calc(1.02);
+transition: 0.6s;
+}
 
 .logo {
     margin-top: 15px;
@@ -185,6 +191,10 @@ box-sizing: border-box;
     background-color: #9BA0A1;
 }
 
+.RB.yellow{
+        background-color: #c09d00;
+
+}
 
 
 .SpecsRB {

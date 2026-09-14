@@ -37,8 +37,15 @@ nav a {
 }
 
 nav p{
-    color: #fd9307;
+    color: rgb(220, 24, 70);
 font-size: xxx-large;
+}
+
+nav p:hover{
+        color: #ffffff;
+font-size: xxx-large;
+scale: calc(1.02);
+transition: 0.6s;
 }
 
 .logo {
@@ -119,6 +126,14 @@ h1 {
     margin: 9%;
 
 }
+
+.mini-barre{
+    border-bottom: 15px solid rgb(255, 255, 255);
+        margin-bottom: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
+}
+
 
 .bloc-image {
     display: flex;

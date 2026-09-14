@@ -26,9 +26,17 @@ nav a {
 }
 
 nav p{
-    color: #fd9307;
+    color:  rgb(140, 182, 255);
 font-size: xxx-large;
 }
+
+nav p:hover{
+        color: #ffffff;
+font-size: xxx-large;
+scale: calc(1.02);
+transition: 0.6s;
+}
+
 
 .logo {
     margin-top: 15px;
@@ -48,17 +56,19 @@ h1 {
 }
 
 .Section-Moi {
-    display: flex;
-    align-items: center; 
-    gap: 4%;              
-    padding: 0 2%;
+            display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    padding: 0 2%;    
     /*comme ça toute la section Moi est dans la page*/
-line-height: 0.8;
+    line-height: 1;
 }
 
 .Moi-Gauche {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -66,36 +76,42 @@ line-height: 0.8;
     margin-left: 1%;
 }
 
+.Texte-Moi p{
+    font-size: 0.7em
+}
+
 .ReseauSociaux {
-    padding: 11px 102px;
+    padding: 11px 20px;
     background-color: rgb(217, 217, 217);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 13px;
-    width: fit-content;
     border-radius: 8px;
+    margin: 7%;
 }
 
 .LinkedIn {
-    width: 100px;
+    width: 60px;
     height: auto;
 }
 
 .GitHubLogo {
-    width: 200px;
+    width: 120px;
     height: auto;
 }
 
 .LogoNexus {
-    width: 280px;
+    width: 180px;
     height: auto;
 }
 
 .PDP {
-    height: 420px;
-    width: auto;
+    height: auto;
+    width: 350px;
+    max-width: 90%;    /* ne dépasse jamais 90% de son conteneur sur mobile */
     border-radius: 12%;
-    margin-left: auto; 
 }
 
 
@@ -125,11 +141,16 @@ ul {
     border-radius: 12px;
     padding: 16px 20px;
     margin-bottom: 24px;
+    transition: transform 0.3s ease; 
 }
+
+.Projet-Champ:hover{
+    transform: scale(1.03);
+}
+
 
 .Projet-Image-Nexus img {
     width: 100%;
-    max-width: 1361;
     height: auto;
 }
 
@@ -144,6 +165,7 @@ ul {
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 gap: 15px;
 }
+
 
 
 .Projet-Image img {
