@@ -175,6 +175,16 @@ body {
     color: #c7c9cd;
 }
 
+/*liens sur la page contact (linkedin, github)*/
+.contact-lien {
+    color: #d4a656;
+    text-decoration: none;
+}
+
+.contact-lien:hover {
+    text-decoration: underline;
+}
+
 .page-contenu ul {
     margin-left: 22px;
 }
