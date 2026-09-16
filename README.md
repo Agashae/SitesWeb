@@ -1,12 +1,14 @@
 # Agashae OS — Portfolio
 
-Portfolio personnel d'Agashae Premakumar, presente sous la forme d'un faux systeme d'exploitation ("bureau" avec icones, barre des taches, horloge). Le site regroupe qui je suis, mon CV, mes competences, mes coordonnees, et surtout **tous mes projets**.
+Le but est de créer un portfolio personnel, de le présenter  sous la forme d'un faux systeme d'exploitation avec un bureau, des icones, une barre des tâches et même l'heure.
+Le site regroupe qui je suis, mon CV, mes competences, mes coordonnees, et surtout tous mes projets.
 
 ## Pourquoi ce projet ?
 
-Avant, chacun de mes projets (AgaMoon, Nexus, RedBull...) vivait dans son propre depot, sans lien entre eux et sans page pour les presenter. Pour quelqu'un qui regarde mon travail, il fallait fouiller plusieurs repos differents pour comprendre ce que j'ai fait.
+Avant, chacun de mes projets (AgaMoon, Nexus, RedBull...) était dans son propre depot, sans lien entre eux et sans page pour les presenter. Pour quelqu'un qui regarde mon travail, il fallait fouiller plusieurs repos differents pour comprendre ce que j'ai fait.
 
-Ce depot resout ca : c'est un **portfolio central** qui integre tous mes projets scolaires et personnels au meme endroit, avec une page d'accueil qui donne envie de cliquer et une navigation simple entre eux. L'objectif est d'avoir un seul lien a partager (a un employeur, une ecole, un recruteur) qui montre tout mon travail d'un coup, plutot que de dispatcher les gens sur plusieurs repos GitHub.
+Ce depot resout ça : il centralise tous mes projets scolaires et personnels au même endroit, avec une page d'accueil qui donne envie de cliquer et une navigation simple entre eux. 
+L'objectif est d'avoir un seul lien à partager (à un employeur, une école, un recruteur) qui montre tout mon travail d'un coup.
 
 ## Structure du depot
 
@@ -30,9 +32,8 @@ Chaque dossier de projet (`MoonWebsite`, `Nexus`, `RedBull`) est un mini-site in
 
 ## Technologies
 
-- HTML / CSS / JavaScript vanilla (pas de framework)
-- Police [Space Mono](https://fonts.google.com/specimen/Space+Mono) (Google Fonts)
-- Icones [Phosphor Icons](https://phosphoricons.com/)
+- HTML / CSS / JavaScript (pas de framework)
+
 
 ## Voir le site
 
@@ -48,6 +49,7 @@ Puis ouvrir `index.html`.
 ## Auteur
 
 **Agashae Premakumar** — Apprenti informaticien CFC, Exploitation & Infrastructure (ETML)
+Claude pour l'aide à l'optimisation des codes, structuration des dossiers et correction générales
 
 - [LinkedIn](https://www.linkedin.com/in/agashae-premakumar/)
 - [GitHub](https://github.com/Agashae)
