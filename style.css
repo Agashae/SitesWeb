@@ -330,11 +330,50 @@ hr {
 /*--- responsive ---*/
 @media (max-width: 700px) {
 
+    /*sur mobile le bureau passe en flux normal (plus d'elements en position absolue
+    qui se chevauchent) : icones en rangee, puis le texte, puis la taskbar*/
+    .bureau {
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+
+    .icones {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 20px 10px;
+        gap: 22px;
+    }
+
+    .icone {
+        width: 78px;
+    }
+
+    .icone i {
+        font-size: 34px;
+    }
+
+    .icone span {
+        font-size: 13px;
+    }
+
     .bureau-intro {
-        left: 30px;
-        right: 30px;
+        position: static;
+        left: auto;
+        right: auto;
+        bottom: auto;
         text-align: left;
-        bottom: 90px;
+        max-width: none;
+        margin: 20px 25px 0;
+    }
+
+    .logo-hero {
+        width: 110px;
+        margin-bottom: 14px;
     }
 
     .bureau-intro h1 {
