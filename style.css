@@ -231,6 +231,17 @@ hr {
 }
 
 /*page projets*/
+/*titres des sections (1ere annee, perso)*/
+.section-titre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0 0 0;
+    padding-bottom: 8px;
+    color: #d4a656;
+    border-bottom: 1px solid rgba(212, 166, 86, 0.2);
+}
+
 .carte {
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 10px;
