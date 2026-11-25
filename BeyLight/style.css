@@ -1,0 +1,135 @@
+/* Style pour les boutons */
+.buy-button {
+    background-color: #1a73e8; /* Bleu pour les boutons */
+    color: white;
+    padding: 15px 30px; /* Ajuster la taille des boutons */
+    font-size: 18px;
+    text-decoration: none; /* Supprime le soulignement des liens */
+    border-radius: 10px; /* Coins arrondis */
+    text-align: center; /* Centre le texte dans les boutons */
+    transition: all 0.4s ease; /* Animation pour tout (taille, couleur, etc.) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour ajouter de la profondeur */
+    transform: scale(1); /* Position initiale */
+    flex-grow: 1; /* Permet aux boutons de s'étendre */
+    flex-basis: 0; /* Évite que les boutons aient une largeur initiale */
+    margin: 10px; /* Ajoute un peu d'espace autour des boutons */
+}
+
+/* Style du conteneur de boutons */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement si nécessaire */
+    gap: 20px; /* Espacement entre les boutons */
+    flex-wrap: wrap; /* Pour que les boutons passent à la ligne si nécessaire */
+    margin-top: 20px;
+}
+
+/* Effet au survol du conteneur */
+.buy-button:hover {
+    background-color: #0059b3; /* Couleur plus foncée lors du hover */
+    transform: scale(1.1); /* Agrandit légèrement le bouton */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Ombre plus intense lors du hover */
+}
+
+/* c'est le trait en haut */
+.marge hr {
+    width: 90%; /* La largeur de la ligne sera de 90% de la fenêtre */
+    border: 1px solid #ffffff; /* Une ligne blanche */
+    margin: 20px auto; /* Espace au-dessus et en dessous de la ligne */
+}
+
+.text {
+    color: #000; /* Correction de la couleur */
+}
+
+.bas-gauche {
+    position: absolute; /* Positionnement absolu */
+    bottom: 90px; /* Distance par rapport au bas */
+    left: 20px; /* Distance par rapport à la gauche */
+    font-size: 1.5rem; /* Taille du texte plus grande */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+    background: linear-gradient(to right, #ff7f50, #00bfff, #1e90ff); /* Dégradé de l'orange (#ff7f50) au bleu clair (#00bfff et #1e90ff) */
+    -webkit-background-clip: text; /* Clip du fond sur le texte */
+    -webkit-text-fill-color: transparent; /* Remplissage du texte transparent */
+    padding: 20px; /* Espacement interne autour du texte */
+    border-radius: 8px; /* Coins arrondis pour le fond */
+    max-width: calc(100% - 40px); /* Largeur maximale pour éviter d'être trop large, moins les marges */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Ombre pour ajouter de la profondeur */
+    text-align: center; /* Centre le texte */
+}
+
+/* Style pour le texte manuscrit */
+.handwritten {
+    font-family: 'Dancing Script', cursive; /* Ajoute 'cursive' comme police de secours */
+    font-style: normal;
+    font-weight: 400;
+    color: white; /* Couleur du texte */
+    transition: transform 0.3s ease; /* Transition douce pour l'agrandissement */
+        margin-left: 20px; /* Ajuste la valeur selon tes besoins */
+
+}
+
+
+
+/* Style pour l'easter egg */
+.easteregg {
+
+}
+
+/* Musique */
+.audio-container {
+    display: flex; /* Utilise Flexbox pour centrer l'élément */
+    justify-content: center; /* Centre horizontalement */
+    margin: 0; /* Supprime les marges verticales */
+    position: fixed; /* Position fixe pour le garder en bas */
+    bottom: 0; /* Positionner au bas de la page */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Ajuster pour centrer le conteneur */
+    padding: 10px; /* Ajoute un peu d'espacement autour du conteneur */
+    width: calc(100% - 20px); /* S'assurer que le conteneur utilise toute la largeur disponible */
+    border-radius: 10px; /* Coins arrondis pour le conteneur */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Ombre pour plus de profondeur */
+
+}
+
+/* Lecteur de musique */
+audio {
+    margin: 20px auto; /* Décalage vertical */
+    width: 40vw; /* Utilise 80% de la largeur de la fenêtre */
+    max-width: 100%; /* Empêche le lecteur de dépasser 100% de la largeur */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 10px; /* Coins arrondis */
+    background: linear-gradient(to right, #004dff, #00bfff); /* Dégradé de bleu pour le lecteur */
+    padding: 10px; /* Espacement interne */
+    outline: none; /* Supprime l'outline par défaut */
+    box-shadow: none; /* Supprime l'ombre pour le lecteur */
+    color: white; /* Couleur du texte à l'intérieur du lecteur */
+}
+
+
+/* Personnalisation du style des boutons du lecteur audio */
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(to right, #004dff, #00bfff); /* Dégradé de bleu pour le panneau de contrôle */
+    border-radius: 10px; /* Coins arrondis pour le panneau de contrôle */
+    border: none; /* Supprime la bordure par défaut du panneau de contrôle */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button {
+    background: transparent; /* Transparent pour les boutons */
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: white; /* Couleur blanche pour l'affichage du temps */
+}
+
+/* Media queries pour améliorer l'affichage sur mobile */
+@media (max-width: 600px) {
+    .bas-gauche {
+        font-size: 1.2rem; /* Réduire la taille de la police sur les petits écrans */
+        max-width: 90%; /* Augmenter la largeur maximale pour s'adapter à l'écran */
+    }
+}
