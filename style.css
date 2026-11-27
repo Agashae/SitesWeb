@@ -68,7 +68,8 @@ body {
     padding: 50px;
     display: flex;
     flex-direction: column;
-    gap: 38px;
+    /*reduit de 38 a 28px depuis l'ajout de l'icone But, sinon ca touchait la taskbar sur les petits ecrans*/
+    gap: 28px;
 }
 
 .icone {
