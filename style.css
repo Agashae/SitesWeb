@@ -226,6 +226,33 @@ hr {
 }
 
 /*page projets*/
+/*sommaire en haut de la page projets, chaque lien saute a une section*/
+.sommaire {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sommaire a {
+    padding: 8px 14px;
+    border: 1px solid rgba(212, 166, 86, 0.4);
+    border-radius: 6px;
+    background: rgba(212, 166, 86, 0.08);
+    color: #d4a656;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sommaire a:hover {
+    background: rgba(212, 166, 86, 0.2);
+}
+
+/*defilement doux quand on clique un lien du sommaire*/
+html {
+    scroll-behavior: smooth;
+}
+
 /*titres des sections (1ere annee, perso)*/
 .section-titre {
     display: flex;
@@ -235,6 +262,8 @@ hr {
     padding-bottom: 8px;
     color: #d4a656;
     border-bottom: 1px solid rgba(212, 166, 86, 0.2);
+    /*laisse un peu d'espace au dessus du titre quand on arrive via le sommaire*/
+    scroll-margin-top: 20px;
 }
 
 .carte {
