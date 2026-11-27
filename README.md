@@ -1,7 +1,7 @@
 # Agashae OS — Portfolio
 
 Le but est de créer un portfolio personnel, de le présenter  sous la forme d'un faux systeme d'exploitation avec un bureau, des icones, une barre des tâches et même l'heure.
-Le site regroupe qui je suis, mon CV, mes competences, mes coordonnees, et surtout tous mes projets.
+Le site regroupe qui je suis, mes competences, mes coordonnees, et surtout tous mes projets.
 
 ## Pourquoi ce projet ?
 
@@ -19,16 +19,17 @@ SitesWeb/
 ├── projets.html         liste de mes projets, avec un lien vers chacun
 ├── competences.html      connaissances techniques, langues, modules ETML
 ├── contact.html          coordonnees, LinkedIn, GitHub
+├── but.html              le but du projet (objectif du portfolio)
 ├── readme.html           version "site" de ce README, credits
-├── CV_AgashaePremakumar.pdf
 ├── style.css / main.js
 │
 ├── MoonWebsite/         projet : site sur la lune (HTML/CSS)
 ├── Nexus/               projet : site sur l'astronomie
-└── RedBull/             projet : site dedie a l'univers Red Bull
+├── RedBull/             projet : site dedie a l'univers Red Bull
+└── BeyLight/            projet : mon premier site web (11eme annee)
 ```
 
-Chaque dossier de projet (`MoonWebsite`, `Nexus`, `RedBull`) est un mini-site independant, accessible directement depuis la page **Projets** du portfolio.
+Chaque dossier de projet (`MoonWebsite`, `Nexus`, `RedBull`, `BeyLight`) est un mini-site independant, accessible directement depuis la page **Projets** du portfolio.
 
 ## Technologies
 
